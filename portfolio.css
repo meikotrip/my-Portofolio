@@ -1,0 +1,802 @@
+body {
+    margin:0%
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+.no-active {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(#a682ec,#ffffff);
+    border: 2px solid #e5e5e5e5;
+    padding: 0% 100px;
+}
+
+.nav-name {
+    padding:0% 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    color:#080c25;
+}
+
+.nav .nav-bar {
+    display: flex;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: sans-serif;
+    color: #080c25;
+    margin: 0 10px;
+    padding: 25px 30px;
+}
+
+.nav-bar a:hover {
+    color: #3071e7;
+    transition: ease-in 0.5s;
+}
+
+#menu-bar {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+/* Homepage */
+.homepage {
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 10%;
+    background: linear-gradient(#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #a682ec, #080c25);
+}
+
+.home-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;  
+}
+
+.home-blob {
+    width: 525px;
+}
+
+.desc {
+    margin-bottom: 50px;
+}
+
+.desc .subhead {
+    color:#ff4c29;
+    font-style: italic;
+}
+
+.head {
+    margin: 10px 0px 0px;
+    color:#080c25;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.desc .thin-head {
+    margin: -10px 0px 20px;
+    color: #989898;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+.desc .info-p {
+    margin: 0px 15% 40px;
+}
+
+.hub-btn {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding:10px 20px;
+    color:#ffffff;
+    background-color: #ff4c29;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.hub-btn:hover {
+    transition: all ease-in 0.75s;
+    background-color: #b92102;
+}
+
+/* About Me */
+.aboutme {
+    padding: 7.5% 5% 5%;
+    background:linear-gradient(#080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #a682ec, #ffffff);
+}
+
+.header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    margin: -1px 0px 0px;
+}
+
+.dark {
+    color:#080c25;
+}
+
+.light {
+    color:#ffffff;
+}
+
+.sub-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    margin: 5px 0;
+}
+
+.container-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1% 5% 15%;
+}
+
+.experience {
+    margin: 2% 0;
+    width: 49%;
+    border: 2px solid #ffffff;
+}
+
+.skills {
+    margin: 2% 0;
+    width: 49%;
+    border: 2px solid #ffffff;
+}
+
+.interaction {
+    width: 100%;
+    border: 2px solid #ffffff;
+}
+
+.content {
+    text-align: justify;
+    padding: 2% 5%;
+}
+
+.content-3 {
+    padding: 2% 2.5%;
+}
+
+.accordion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.skill {
+    color:#ffffff;
+    font-weight: 600;
+    transition: all ease-in-out 0.2s;
+    margin: 0 0 10px;
+    border: 2px solid white;
+    border-radius: 5%;
+    width: 150px;
+    padding:7.5px 0px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Poppins',"sans-serif";
+}
+
+.skill-light {
+    color: #080c25;
+    font-weight: 600;
+    background-color: #ffffff;
+    transition: all ease-in-out 0.2s;
+    margin: 0 0 10px;
+    border: 2px solid #a682ec;
+    border-radius: 5%;
+    width: 150px;
+    padding:7.5px 0px;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Poppins',"sans-serif";
+}
+
+.hide-skill {
+    display: none !important;
+}
+
+.show-skill {
+    display: inline-block !important;
+}
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.border-sosmed {
+    box-sizing: border-box;
+    width: 4rem;
+    height: 4rem;
+    border:2px solid #eaeaeab5;
+    border-radius: 100%;
+    background-color: #080c25;
+}
+
+.fill-and-size {
+    width: 35px;
+    fill:#ffffff;
+    padding: 10px 13px 10px 13px;
+}
+.border-sosmed:hover {
+    background-color: #ffffff;
+}
+
+.border-sosmed:hover > .fill-and-size {
+    fill: #080c25;
+}
+
+/* My Portfolio */
+.myPo {
+    padding: 7.5% 5% 7.5%;
+    background: linear-gradient(#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff,#ffffff, #ffffff, #ffffff,#ffffff, #ffffff, #ffffff,#ffffff, #ffffff, #ffffff,#ffffff, #ffffff, #ffffff, #a682ec, #080c25);
+}
+
+.cap-header {
+    text-align: center;
+    margin: 0 20%;
+}
+
+.container-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 5% 5%;
+}
+
+.box-porto {
+    width:49%;
+    margin: 20px 0px 0px;
+    border: 2px solid #080c25;
+}
+
+.content img {
+    width: 100%;
+}
+
+.text {
+    text-align: justify;
+}
+
+/* Contact */
+.myContact {
+    padding: 7.5% 5%;
+    background:linear-gradient(#080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #080c25, #a682ec);  
+}
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% 25%;
+}
+
+.container-contact form .ibox {
+    margin:0.5rem 0;
+}
+
+.container-contact form .ibox:nth-last-child(2) {
+    margin-bottom:4rem 0;
+}
+
+
+.container-contact form .ibox textarea, .container-contact form .ibox input {
+    width: 100%;
+    padding:10px;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.container-contact form .ibox label {
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-family: "Poppins", "sans-serif";
+}
+
+.space {
+    margin: 1% 0;
+}
+
+/* Footer */
+footer {
+    background: #a682ec;
+}
+
+footer p {
+    margin:0px;
+    padding: 20px 0px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color:#080c25;
+}
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .active {
+        display: block;
+    }
+    .nav {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .nav-name {
+        width: 60%;
+        padding: 5px;
+        font-size: 13px;
+    }
+    .nav .nav-bar {
+        display: block;
+    }
+    .nav-bar a {
+        display: block;
+        text-align: center;
+        padding: 15px 30px;
+    }
+    .nav-bar a:hover {
+        transition: all ease-in-out 0.5s;
+        background-color: #080c25;
+        color:#ffffff;
+    }
+    #menu-bar {
+        display: block;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    #list-menu {
+        width: 100%;
+    }
+    .homepage {
+        flex-wrap: wrap;
+        padding: 20% 5% 50%;
+    }
+    .home-blob {
+        width:275px;
+    }
+    .subhead {
+        font-size: 15px;
+        margin: 0px;
+    }
+    .head {
+        font-size: 20px;
+        margin: 2px 0px 0px;
+    }
+    .desc {
+        margin:-30px 0 35px 0;
+    }
+    .desc .thin-head {
+        font-size: 13px;
+        margin: -7px 0px 10px;
+    }
+    .desc .info-p {
+        margin: 0 1% 10%;
+    }
+    p, .hub-btn {
+        font-size: 13.5px;
+    }
+    .container-about, .container-portfolio {
+        margin: 0 0 50%
+    }
+    .container-contact {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .experience {
+        width: 100%;
+    }
+    .skills {
+        width: 100%;
+    }
+    .header {
+        font-size: 28px;
+    }
+    .cap-header {
+        display: none;
+    }
+    .sub-header {
+        font-size: 14px;
+    }
+    .skill {
+        width:100px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .skill-light {
+        width:100px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .border-sosmed {
+        width: 3rem;
+        height: 3rem;
+    }
+    .fill-and-size {
+        width: 30px;
+        padding: 5px 7.5px;
+    }
+    .box-porto {
+        width: 100%;
+    }  
+}
+
+@media screen and (min-width: 550px) {
+    .nav {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .nav-name {
+        padding: 0 5px;
+    }
+    .nav .nav-bar {
+        display: block;
+    }
+    .nav-bar a {
+        display: block;
+        text-align: center;
+        padding: 15px 30px;
+    }
+    .nav-bar a:hover {
+        transition: all ease-in-out 0.5s;
+        background-color: #080c25;
+        color:#ffffff;
+    }
+    #menu-bar {
+        display: block;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    #list-menu {
+        width: 100%;
+    }
+    .homepage {
+        padding: 17.5% 5%;
+    }
+    .home-blob {
+        width:240px;
+    }
+    .subhead {
+        font-size: 12.5px;
+        margin: 0px;
+    }
+    .head {
+        font-size: 20px;
+        margin: 2px 0px 0px;
+    }
+    .desc {
+        margin-bottom: 30px;
+    }
+    .desc .thin-head {
+        font-size: 13.5px;
+        margin: -5px 0px 5px;
+    }
+    .desc .info-p {
+        margin: 0 1% 5%;
+    }
+    p {
+        font-size: 12px;
+    }
+    .hub-btn {
+        font-size: 12px;
+    }
+    .container-about, .container-portfolio {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .container-contact {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .header {
+        font-size: 28px;
+    }
+    .sub-header {
+        font-size: 14.5px;
+    }
+    .skill {
+        width:90px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .skill-light {
+        width:90px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .border-sosmed {
+        width: 3rem;
+        height: 3rem;
+    }
+    .fill-and-size {
+        width: 30px;
+        padding: 5px 7.5px;
+    }  
+}
+
+@media screen and (min-width: 697px) {
+    .nav {
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .nav-name {
+        padding: 0 5px;
+    }
+    .nav .nav-bar {
+        display: block;
+    }
+    .nav-bar a {
+        display: block;
+        text-align: center;
+        padding: 15px 30px;
+    }
+    .nav-bar a:hover {
+        transition: all ease-in-out 0.5s;
+        background-color: #080c25;
+        color:#ffffff;
+    }
+    #menu-bar {
+        display: block;
+        align-items: center;
+        padding: 20px 10px;
+    }
+    #list-menu {
+        width: 100%;
+    }
+    .homepage {
+        padding: 17.5% 5%;
+    }
+    .home-blob {
+        width:315px;
+    }
+    .subhead {
+        font-size: 13px;
+        margin: 0px;
+    }
+    .head {
+        font-size: 21.5px;
+        margin: 1px 0px 0px;
+    }
+    .desc {
+        margin-bottom: 35px;
+    }
+    .desc .thin-head {
+        font-size: 13.5px;
+        margin: -5px 0px 10px;
+    }
+    .desc .info-p {
+        margin: 0 1% 5%;
+    }
+    p {
+        font-size: 13px;
+    }
+    .hub-btn {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .container-about, .container-portfolio {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .container-contact {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .header {
+        font-size: 30px;
+    }
+    .sub-header {
+        font-size: 15px;
+    }
+    .skill {
+        width:80px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .skill-light {
+        width:80px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .border-sosmed {
+        width: 3rem;
+        height: 3rem;
+    }
+    .fill-and-size {
+        width: 30px;
+        padding: 5px 7.5px;
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .nav {
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+    .nav-name {
+        padding: 0 5px;
+    }
+    .nav .nav-bar {
+        display: flex;
+        justify-content: end;
+    }
+    .nav-bar a {
+        padding: 25px 10px;
+    }
+    #list-menu {
+        display: flex;
+        justify-content: end;
+        width: 60%;
+    }
+    .nav > #menu-bar {
+        display: none;
+    }
+    .homepage {
+        padding: 17.5% 5%;
+    }
+    .home-blob {
+        width:425px;
+    }
+    .subhead {
+        font-size: 14.5px;
+        margin: 0px;
+    }
+    .head {
+        font-size: 25px;
+        margin: 2px 0px 0px;
+    }
+    .desc .thin-head {
+        font-size: 15px;
+        margin: -5px 0px 10px;
+    }
+    .desc .info-p {
+        margin: 0 1% 7.5%;
+    }
+    p {
+        font-size: 14px;
+    }
+    .hub-btn {
+        font-size: 14px;
+    }
+    .container-about, .container-portfolio {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .container-contact {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .header {
+        font-size: 36px;
+    }
+    .sub-header {
+        font-size: 17px;
+    }
+    .skill {
+        width:100px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .skill-light {
+        width:100px;
+        font-size: 12px;
+        margin: 0 5px 7.5px;
+    }
+    .border-sosmed {
+        width: 3rem;
+        height: 3rem;
+    }
+    .fill-and-size {
+        width: 30px;
+        padding: 5px 7.5px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .nav {
+        flex-wrap: nowrap;
+        padding: 0 50px;
+    }
+    .nav-name {
+        padding: 0 25px;
+    }
+    .nav .nav-bar {
+        display: flex;
+        justify-content: end;
+    }
+    .nav-bar a {
+        padding: 25px 30px;
+    }
+    #list-menu {
+        display: flex;
+        justify-content: end;
+        width: 60%;
+    }
+    .homepage {
+        padding: 10%;
+    }
+    .home-blob {
+        width:525px;
+    }
+    .subhead {
+        font-size: 1.17em;
+        margin: 1em 0;
+    }
+    .head {
+        font-size: 35px;
+        margin: 10px 0px 0px;
+    }
+    .desc .thin-head {
+        font-size: 20px;
+        margin: -10px 0px 20px;
+    }
+    .desc .info-p {
+        font-size: 16px;
+        margin: 0 15% 40px;
+    }
+    .hub-btn {
+        font-size: 16px;
+    }
+    .container-about, .container-portfolio {
+        margin:1% 5% 15%;
+    }
+    .container-contact {
+        margin:2% 25%;
+    }
+    .header {
+        font-size: 42px;
+    }
+    .sub-header {
+        font-size: 21px;
+    }
+    .skill {
+        width:150px;
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    .skill-light {
+        width: 150px;
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+    .border-sosmed {
+        width: 4rem;
+        height: 4rem;
+    }
+    .fill-and-size {
+        width: 35px;
+        padding: 10px 13px;
+    }
+}
