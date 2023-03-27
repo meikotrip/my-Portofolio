@@ -1,5 +1,5 @@
 # PORTFOLIO PRIBADI
-Portfolio website ini dibuat secara responsive dan tanpa menggunakan framework.
+Portfolio website ini dibuat secara responsive dan native.
 
 ## Link and Author
 Author : Muhamad Meiko Triputra
